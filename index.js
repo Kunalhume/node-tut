@@ -49,3 +49,38 @@
 
 
 // --------------> Lecture - 9  <-------------------
+// Don't Delete package.json file
+
+// While uploading in GitHub
+// Don't Push node_modules folder 
+// for this create " .gitignore " and add /node_modules
+
+
+// ----------------> Lecture - 10 <---------------------
+// Nodemon(Node JS) package same as LiveServer(HTML) 
+// Command : ---> nodemon .\index.js
+
+// console.log("Hey, Kunal");
+// console.log(246+465);
+
+
+// ------------------> Lecture - 11 <----------------------
+// Making Simple API 
+
+// const http = require('http');
+// const { type } = require('os');
+
+// // exporting data form another file
+// const data= require('./data'); 
+
+// http.createServer((req,resp)=>{
+//   resp.writeHead(200,{'Content-Type':'application\json'});
+//   resp.write(JSON.stringify(data));
+//   resp.end();
+// }).listen(4500);
+
+
+// -------------------> Lecture - 12 <----------------------
+//Taking Input from Command Prompt
+
+console.log(process.argv[2]);
