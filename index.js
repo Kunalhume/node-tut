@@ -83,4 +83,90 @@
 // -------------------> Lecture - 12 <----------------------
 //Taking Input from Command Prompt
 
-console.log(process.argv[2]);
+// console.log(process.argv[2]);
+
+// const fs = require('fs');
+
+// const input = process.argv;
+
+// if(input[2]=='add'){
+//   fs.writeFileSync(input[3],input[4]);
+// }
+// else if(input[2]=='remove'){
+//   fs.unlinkSync(input[3]);
+// }
+// else{
+//   console.log("Invalid Input")
+// }
+
+
+// ---------------------> Lecture - 13 <-------------------------
+// Display file from folder
+
+// const fs = require('fs');
+// const path = require('path');
+
+// const dirPath = path.join(__dirname,'files');
+// console.log(dirPath);
+
+// Create multiple file using code 
+// for(i=0;i<5;i++){
+//   // fs.writeFileSync("Hello"+i+".txt","Sample text file");
+//   fs.writeFileSync(dirPath+`/Hello${i}.txt`,"Sample text file");
+// }
+
+// fs.readdir(dirPath,(error,files)=>{
+//   // console.warn(files);   // In Array Format
+//   files.forEach((item)=>{
+//       console.log(item);  
+//   })
+// });
+
+//Delete Files 
+
+// const fs = require('fs');
+// const path = require('path');
+// // Delete Multiple files in once 
+// const dirPath = path.join(__dirname,'files');
+// for(i=0;i<5;i++){
+//   fs.unlinkSync(dirPath+`/Hello${i}.txt`);
+// }
+
+
+// ----------------------> Lecture - 14 <----------------------------
+// CRUD with File System 
+
+const { dir } = require('console');
+const fs = require('fs');
+const path = require('path');
+const dirPath = path.join(__dirname,'crud');
+
+// Making const of file Path 
+const filePath =`${dirPath}/Buddy.txt`; 
+
+// fs.writeFileSync(filePath,"Hey Buddy");
+
+// IMPORTANT :- Without 'utf-8' we see file in buffer format 
+// fs.readFile(filePath,'utf-8',(error,item)=>{
+//   console.log(item);
+// })
+
+// Adding or Appending data in File 
+// fs.appendFile(filePath," Hey Kunal",(err)=>{
+//   if(!err) console.log("file is updated");
+// });
+
+
+// Rename the File 
+// fs.rename(filePath,`${dirPath}/Bro.txt`,(err)=>{
+//   if(!err) console.log("file is renamed");
+// });
+
+
+//Delete File Operation 
+// fs.unlinkSync(`${dirPath}/Bro.txt`);
+
+
+// --------------------> Lecture - 15 <--------------------------
+// Asynchronous Basics in Node JS
+  
